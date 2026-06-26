@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Recife Ciclovia",
+    "slug": "recife-ciclovia-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "updates": {
+      "enabled": false
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.recife.ciclovia",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "O app precisa da sua localização para exibir ciclovias próximas.",
+        "NSLocationAlwaysUsageDescription": "O app precisa da sua localização para exibir ciclovias próximas."
+      }
+    },
+    "android": {
+      "package": "com.recife.ciclovia",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "O app precisa da sua localização para exibir ciclovias próximas."
+        }
+      ]
+    ]
+  }
+}
